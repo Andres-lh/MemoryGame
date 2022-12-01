@@ -20,12 +20,11 @@ public class Table : MonoBehaviour
         {
             for (int y = 0; y < m_SizeTableY; y++)
             {
-                GameObject tokenGo = Instantiate(m_Token);
-                tokenGo.transform.SetParent(m_AreaOfGame);
-                tokenGo.transform.localPosition = new Vector3(x * m_SplitTokens.x, 0, y * m_SplitTokens.y);
-                Debug.Log(x);
-            }
+                Vector3 newPosition = new Vector3(x * m_SplitTokens.x, 0, y * m_SplitTokens.y);
+                GameObject tokenGo = Instantiate(m_Token, newPosition, Quaternion.identity);
 
+                tokenGo.transform.parent = m_AreaOfGame;
+            }
         }
 
     }

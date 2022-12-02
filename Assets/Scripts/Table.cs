@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -15,7 +16,7 @@ public class Table : MonoBehaviour
     [SerializeField] private GameObject m_Token;
     [SerializeField] private Transform m_AreaOfGame; // defined area of game in order to instance tokens and adjust it.
 
-    void Start()
+    public void StarTable()
     {
         Vector2 StartPositionToken = CalculateStartPositionToken();
 
@@ -29,13 +30,16 @@ public class Table : MonoBehaviour
         {
             for (int y = 0; y < m_SizeTableY; y++)
             {
-                Vector3 newPosition = new Vector3((x * m_SplitTokens.x)-StartPositionToken.x, 0, (y * m_SplitTokens.y)-StartPositionToken.y);
+                Vector3 newPosition = new Vector3((x * m_SplitTokens.x)- StartPositionToken.x, 0, (y * m_SplitTokens.y) - StartPositionToken.y);
 
                 GameObject tokenGo = Instantiate(m_Token, newPosition, Quaternion.identity);
                 tokenGo.GetComponent<Token>().Id = idsTokens[remainingTokens];
 
                 tokenGo.transform.parent = m_AreaOfGame;
-                remainingTokens++;  
+                remainingTokens++;
+                
+                
+
             }
         }
 

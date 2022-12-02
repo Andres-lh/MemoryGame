@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Table _table;
+    private void Awake()
     {
-        
+        _table = GetComponent<Table>();  
     }
 
-    // Update is called once per frame
+  void Start()
+    {
+        _table.StarTable();
+    }
     void Update()
     {
         

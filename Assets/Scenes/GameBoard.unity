@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802834, g: 0.2257135, b: 0.3069223, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -326,7 +326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.7255335, y: -0.00084202737, z: 0.0008784719, w: -0.6881859}
-  m_LocalPosition: {x: -0.2, y: 22.7, z: 0}
+  m_LocalPosition: {x: -0.2, y: 19.8, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -357,7 +357,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315474852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.59, y: 9.51, z: -0.73}
+  m_LocalPosition: {x: 0.59, y: 9.26, z: -0.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -557,6 +557,16 @@ MonoBehaviour:
   m_SplitTokens: {x: 2.5, y: 2.5}
   m_Token: {fileID: 7340705418919200397, guid: 5e016a69667205f4bba41999bc632002, type: 3}
   m_AreaOfGame: {fileID: 1315474853}
+  _imagenes:
+  - {fileID: 8893197033273748584, guid: ac621cc753937364287adc849928723c, type: 3}
+  - {fileID: 5121642841084667328, guid: ac621cc753937364287adc849928723c, type: 3}
+  - {fileID: 6889355241094954579, guid: ac621cc753937364287adc849928723c, type: 3}
+  - {fileID: 1148300752529649347, guid: ac621cc753937364287adc849928723c, type: 3}
+  - {fileID: -6278441182772759648, guid: ac621cc753937364287adc849928723c, type: 3}
+  - {fileID: -4797046503667075802, guid: ac621cc753937364287adc849928723c, type: 3}
+  - {fileID: -7247053429677066048, guid: ac621cc753937364287adc849928723c, type: 3}
+  - {fileID: -2612475765610456502, guid: ac621cc753937364287adc849928723c, type: 3}
+  - {fileID: 978570915530485626, guid: ac621cc753937364287adc849928723c, type: 3}
 --- !u!114 &1540858669
 MonoBehaviour:
   m_ObjectHideFlags: 0

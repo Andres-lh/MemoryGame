@@ -10,9 +10,8 @@ public class Token : MonoBehaviour
 
     private void OnMouseDown()
     {
-        print(Id);
-        ShowFront();
-
+        GameManager.instance.ProcessTokenClick(this);
+       
     }
 
     public void ShowFront()
@@ -22,6 +21,10 @@ public class Token : MonoBehaviour
     public void ShowBack()
     {
         _Animator.Play("TokenFrontBack");
+    }
+    public void Setearimage(Sprite sprite)
+    {
+        _SpriteRenderer.sprite=sprite;
     }
 
 }

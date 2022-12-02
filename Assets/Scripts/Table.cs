@@ -16,6 +16,10 @@ public class Table : MonoBehaviour
     [SerializeField] private GameObject m_Token;
     [SerializeField] private Transform m_AreaOfGame; // defined area of game in order to instance tokens and adjust it.
 
+    public int cuantityTokens { get;  set; }
+
+    [SerializeField] private Sprite[] _imagenes; 
+
     public void StarTable()
     {
         Vector2 StartPositionToken = CalculateStartPositionToken();
@@ -33,13 +37,19 @@ public class Table : MonoBehaviour
                 Vector3 newPosition = new Vector3((x * m_SplitTokens.x)- StartPositionToken.x, 0, (y * m_SplitTokens.y) - StartPositionToken.y);
 
                 GameObject tokenGo = Instantiate(m_Token);
-                tokenGo.GetComponent<Token>().Id = idsTokens[remainingTokens];
+
+                Token currenlyToken=tokenGo.GetComponent<Token>();
+                currenlyToken.Id = idsTokens[remainingTokens];
+                currenlyToken.Setearimage(_imagenes[currenlyToken.Id]);
+                
 
                 tokenGo.transform.parent = m_AreaOfGame;
                 tokenGo.transform.localPosition = newPosition;
                 remainingTokens++;
             }
         }
+
+        cuantityTokens = remainingTokens;
 
     }
     private Vector2 CalculateStartPositionToken()

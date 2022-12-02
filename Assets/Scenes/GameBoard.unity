@@ -326,7 +326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.7255335, y: -0.00084202737, z: 0.0008784719, w: -0.6881859}
-  m_LocalPosition: {x: -1.5880964, y: 9.120942, z: -0.3020904}
+  m_LocalPosition: {x: -0.2, y: 22.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -357,7 +357,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315474852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.656, y: 3.409, z: -0.24}
+  m_LocalPosition: {x: 0.04, y: 9.13, z: -0.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -377,27 +377,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ea53b739e460e941bc8a79579b83dce, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ea53b739e460e941bc8a79579b83dce, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ea53b739e460e941bc8a79579b83dce, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ea53b739e460e941bc8a79579b83dce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.11
+      value: 8.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ea53b739e460e941bc8a79579b83dce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.02
+      value: 4.91
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ea53b739e460e941bc8a79579b83dce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.49
+      value: 3.38
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ea53b739e460e941bc8a79579b83dce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -554,7 +554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SizeTableX: 4
   m_SizeTableY: 4
-  m_SplitTokens: {x: 1, y: 1}
+  m_SplitTokens: {x: 2.5, y: 2.5}
   m_Token: {fileID: 7340705418919200397, guid: 5e016a69667205f4bba41999bc632002, type: 3}
   m_AreaOfGame: {fileID: 1315474853}
 --- !u!114 &1540858669

@@ -32,14 +32,12 @@ public class Table : MonoBehaviour
             {
                 Vector3 newPosition = new Vector3((x * m_SplitTokens.x)- StartPositionToken.x, 0, (y * m_SplitTokens.y) - StartPositionToken.y);
 
-                GameObject tokenGo = Instantiate(m_Token, newPosition, Quaternion.identity);
+                GameObject tokenGo = Instantiate(m_Token);
                 tokenGo.GetComponent<Token>().Id = idsTokens[remainingTokens];
 
                 tokenGo.transform.parent = m_AreaOfGame;
+                tokenGo.transform.localPosition = newPosition;
                 remainingTokens++;
-                
-                
-
             }
         }
 

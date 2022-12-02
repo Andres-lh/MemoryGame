@@ -22,6 +22,13 @@ public class Table : MonoBehaviour
 
     public void StarTable()
     {
+
+         if(m_SizeTableX * m_SizeTableY % 2 != 0)
+        {
+            m_SizeTableY -= 1;
+        }
+
+
         Vector2 StartPositionToken = CalculateStartPositionToken();
 
         int CuantityTokens=m_SizeTableX*m_SizeTableY;
